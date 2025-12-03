@@ -13,7 +13,7 @@ export default function Footer() {
 
                                                                                                     {/* Copyright */}
                                                                                                     <p className="text-gray-600 dark:text-slate-400 flex items-center justify-center gap-2 flex-wrap">
-                                                                                                                        <span>© 2024 John Doe. All rights reserved.</span>
+                                                                                                                        <span>© 2024 Shashant Shekhar. All rights reserved.</span>
                                                                                                                         <span className="hidden sm:inline">•</span>
                                                                                                                         <span className="flex items-center gap-1">
                                                                                                                                             Made with <Heart className="h-4 w-4 text-red-500 fill-red-500 animate-pulse" /> and <Code2 className="h-4 w-4 text-purple-600 dark:text-purple-400" />
@@ -29,14 +29,20 @@ export default function Footer() {
 
                                                                                 {/* Social Links */}
                                                                                 <div className="mt-6 flex justify-center gap-4">
-                                                                                                    {['GitHub', 'LinkedIn', 'Twitter'].map((social, index) => (
+                                                                                                    {[
+                                                                                                        { name: 'GitHub', url: 'https://github.com/shashant654' },
+                                                                                                        { name: 'LinkedIn', url: 'https://www.linkedin.com/in/shashant-shekhar-588a0b20b/' },
+                                                                                                        { name: 'Email', url: 'mailto:shashantshekhar10@gmail.com' }
+                                                                                                    ].map((social, index) => (
                                                                                                                         <a
-                                                                                                                                            key={social}
-                                                                                                                                            href="#"
+                                                                                                                                            key={social.name}
+                                                                                                                                            href={social.url}
+                                                                                                                                            target="_blank"
+                                                                                                                                            rel="noopener noreferrer"
                                                                                                                                             className="text-gray-600 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-400 transition-colors duration-300 hover:scale-110 inline-block animate-fade-in"
                                                                                                                                             style={{ animationDelay: `${index * 100}ms` }}
                                                                                                                         >
-                                                                                                                                            {social}
+                                                                                                                                            {social.name}
                                                                                                                         </a>
                                                                                                     ))}
                                                                                 </div>

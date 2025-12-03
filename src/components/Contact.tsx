@@ -7,9 +7,9 @@ export default function Contact() {
                     const { ref, isVisible } = useScrollReveal();
 
                     const contactMethods = [
-                                        { icon: Mail, label: 'Email', value: 'john.doe@example.com', color: 'from-red-500 to-pink-500' },
-                                        { icon: Linkedin, label: 'LinkedIn', value: 'linkedin.com/in/johndoe', color: 'from-blue-600 to-blue-400' },
-                                        { icon: Github, label: 'GitHub', value: 'github.com/johndoe', color: 'from-gray-700 to-gray-500' }
+                                        { icon: Mail, label: 'Email', value: 'shashantshekhar10@gmail.com', color: 'from-red-500 to-pink-500' },
+                                        { icon: Linkedin, label: 'LinkedIn', value: 'linkedin.com/in/shashant-shekhar-588a0b20b', color: 'from-blue-600 to-blue-400' },
+                                        { icon: Github, label: 'GitHub', value: 'github.com/shashant654', color: 'from-gray-700 to-gray-500' }
                     ];
 
                     return (

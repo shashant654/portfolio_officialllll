@@ -1,22 +1,16 @@
 import { Experience } from '@/types';
 
 export const experience: Experience[] = [
-                    {
-                                        title: "Senior Full Stack Developer",
-                                        company: "Tech Innovations Inc.",
-                                        period: "2022 - Present",
-                                        description: "Leading development of enterprise-level applications, mentoring junior developers, and architecting scalable solutions."
-                    },
-                    {
-                                        title: "Full Stack Developer",
-                                        company: "Digital Solutions Co.",
-                                        period: "2020 - 2022",
-                                        description: "Developed and maintained multiple client projects, implemented CI/CD pipelines, and improved application performance by 40%."
-                    },
-                    {
-                                        title: "Frontend Developer",
-                                        company: "StartUp Labs",
-                                        period: "2018 - 2020",
-                                        description: "Built responsive web applications, collaborated with design team, and implemented modern UI/UX practices."
-                    }
+  {
+    title: "Full Stack Developer",
+    company: "Digital Matty Pvt. Ltd.",
+    period: "Dec 2024 - Present",
+    description: "Developed SaaS-based billing and accounting platform with multi-tenancy, subscription management via Stripe, and Google 2FA. Built complete business modules including inventory, contacts, invoicing, purchase orders, payroll, and financial reporting. Created religious service booking platform with real-time chat and referral system. Developed Tutor-Student management platform with REST APIs and Swagger documentation."
+  },
+  {
+    title: "Full Stack Developer",
+    company: "Pisoft Informatics Pvt. Ltd.",
+    period: "Jan 2024 - Jun 2024",
+    description: "Worked on food ordering web application with product listings, cart management, and order processing. Gained practical experience in building responsive frontend interfaces and scalable backend APIs using Python, Django, React, and Bootstrap."
+  }
 ];

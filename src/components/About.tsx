@@ -25,9 +25,9 @@ export default function About() {
                                                                                 }, 30);
                                                             };
 
-                                                            animateCount(setExperienceCount, 6);
-                                                            animateCount(setProjectsCount, 50);
-                                                            animateCount(setClientsCount, 15);
+                                                            animateCount(setExperienceCount, 1);
+                                                            animateCount(setProjectsCount, 4);
+                                                            animateCount(setClientsCount, 10);
                                         }
                     }, [isVisible]);
 
@@ -46,10 +46,10 @@ export default function About() {
                                                                                                     <div className={`space-y-6 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'
                                                                                                                         }`}>
                                                                                                                         <p className="text-lg text-gray-700 dark:text-slate-300 leading-relaxed">
-                                                                                                                                            I'm a passionate full-stack developer with over <span className="font-semibold text-purple-600 dark:text-purple-400">6 years of experience</span> building web applications that make a difference. I specialize in creating seamless user experiences backed by robust, scalable architectures.
+                                                                                                                                            I'm a Full Stack Developer with <span className="font-semibold text-purple-600 dark:text-purple-400">1.6+ years of experience</span> in building secure and scalable web applications. Passionate about creating and documenting APIs with clarity and maintainability. I solve real-world problems through innovative and efficient solutions.
                                                                                                                         </p>
                                                                                                                         <p className="text-lg text-gray-700 dark:text-slate-300 leading-relaxed">
-                                                                                                                                            My journey in tech started with a curiosity about how websites work, and it has evolved into a deep passion for solving complex problems and building products that users love.
+                                                                                                                                            Currently at Digital Matty Pvt. Ltd., I've developed SaaS platforms with multi-tenancy, billing systems with Stripe integration, educational platforms, and real-time applications. I'm skilled in Python, PHP, JavaScript, React, Django, Laravel, and have expertise in databases like PostgreSQL and MongoDB.
                                                                                                                         </p>
 
                                                                                                                         {/* Stats */}
