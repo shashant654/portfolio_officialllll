@@ -1,8 +1,7 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
-
 @import './animations.css';
+@tailwind utilities;
 
 
 @layer base {
