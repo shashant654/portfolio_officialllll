@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useActiveSection } from '@/hooks/useActiveSection';
+import { useDarkMode } from '@/hooks/useDarkMode';
 import Navigation from '@/components/Navigation';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
@@ -13,6 +14,7 @@ import Footer from '@/components/Footer';
 export default function PortfolioPage() {
                     const [isMenuOpen, setIsMenuOpen] = useState(false);
                     const { scrolled, activeSection, scrollToSection } = useActiveSection();
+                    const { isDark, toggle: toggleDark } = useDarkMode();
 
                     const handleNavigate = (section: string) => {
                                         scrollToSection(section);
@@ -20,13 +22,15 @@ export default function PortfolioPage() {
                     };
 
                     return (
-                                        <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white">
+                                        <div className="min-h-screen bg-white dark:bg-slate-950 text-gray-900 dark:text-white transition-colors duration-300">
                                                             <Navigation
                                                                                 scrolled={scrolled}
                                                                                 activeSection={activeSection}
                                                                                 isMenuOpen={isMenuOpen}
                                                                                 onMenuToggle={() => setIsMenuOpen(!isMenuOpen)}
                                                                                 onNavigate={handleNavigate}
+                                                                                isDark={isDark}
+                                                                                onToggleDark={toggleDark}
                                                             />
                                                             <Hero onNavigate={handleNavigate} />
                                                             <About />
