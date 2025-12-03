@@ -1,4 +1,4 @@
-import { Menu, X, Moon, Sun } from 'lucide-react';
+import { Menu, X, Moon, Sun, Github, Linkedin } from 'lucide-react';
 
 interface NavigationProps {
                     scrolled: boolean;
@@ -49,6 +49,28 @@ export default function Navigation({
                                                                                                                                                                                     }`}></span>
                                                                                                                                             </button>
                                                                                                                         ))}
+
+                                                                                                                        {/* Social Media Links */}
+                                                                                                                        <div className="flex items-center gap-4 ml-4 pl-4 border-l border-gray-300 dark:border-slate-700">
+                                                                                                                                            <a
+                                                                                                                                                                href="https://github.com/shashant654"
+                                                                                                                                                                target="_blank"
+                                                                                                                                                                rel="noopener noreferrer"
+                                                                                                                                                                className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition-all duration-300 hover:scale-125 group animate-fade-in delay-400"
+                                                                                                                                                                aria-label="GitHub Profile"
+                                                                                                                                            >
+                                                                                                                                                                <Github className="h-5 w-5 group-hover:rotate-12 transition-transform" />
+                                                                                                                                            </a>
+                                                                                                                                            <a
+                                                                                                                                                                href="https://www.linkedin.com/in/shashant-shekhar-588a0b20b/"
+                                                                                                                                                                target="_blank"
+                                                                                                                                                                rel="noopener noreferrer"
+                                                                                                                                                                className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition-all duration-300 hover:scale-125 group animate-fade-in delay-500"
+                                                                                                                                                                aria-label="LinkedIn Profile"
+                                                                                                                                            >
+                                                                                                                                                                <Linkedin className="h-5 w-5 group-hover:rotate-12 transition-transform" />
+                                                                                                                                            </a>
+                                                                                                                        </div>
 
                                                                                                                         {/* Dark Mode Toggle */}
                                                                                                                         <button

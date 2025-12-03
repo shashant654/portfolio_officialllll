@@ -25,7 +25,7 @@ export default function Hero({ onNavigate }: HeroProps) {
                                                                                 {/* Avatar */}
                                                                                 <div className="mb-8 animate-fade-in-down">
                                                                                                     <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-purple-500 via-pink-500 to-purple-500 flex items-center justify-center text-5xl font-bold shadow-2xl animate-float relative group">
-                                                                                                                        <span className="text-white dark:text-white">JD</span>
+                                                                                                                        <span className="text-white dark:text-white">SS</span>
                                                                                                                         <div className="absolute inset-0 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 blur-lg opacity-50 group-hover:opacity-75 transition-opacity animate-pulse"></div>
                                                                                                                         <Sparkles className="absolute -top-2 -right-2 h-6 w-6 text-yellow-400 animate-pulse" />
                                                                                                     </div>
@@ -35,7 +35,7 @@ export default function Hero({ onNavigate }: HeroProps) {
                                                                                 <div ref={titleRef}>
                                                                                                     <h1 className={`text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-purple-600 via-pink-600 to-purple-600 dark:from-purple-400 dark:via-pink-400 dark:to-purple-400 bg-clip-text text-transparent bg-[length:200%_auto] animate-gradient transition-all duration-1000 ${titleVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                                                                                                                         }`}>
-                                                                                                                        John Doe
+                                                                                                                        Shashant Shekhar
                                                                                                     </h1>
                                                                                 </div>
 
@@ -43,11 +43,11 @@ export default function Hero({ onNavigate }: HeroProps) {
                                                                                 <div ref={subtitleRef}>
                                                                                                     <p className={`text-xl md:text-2xl text-gray-700 dark:text-slate-300 mb-4 transition-all duration-1000 delay-200 ${subtitleVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                                                                                                                         }`}>
-                                                                                                                        Full Stack Developer & UI/UX Enthusiast
+                                                                                                                        Full Stack Developer | 1.6+ Years Experience
                                                                                                     </p>
                                                                                                     <p className={`text-lg text-gray-600 dark:text-slate-400 mb-8 max-w-2xl mx-auto transition-all duration-1000 delay-300 ${subtitleVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                                                                                                                         }`}>
-                                                                                                                        Crafting beautiful, functional, and scalable web applications with modern technologies
+                                                                                                                        Building secure, scalable SaaS platforms, REST APIs, and innovative web solutions with Python, PHP, JavaScript, and React
                                                                                                     </p>
                                                                                 </div>
 
@@ -76,19 +76,23 @@ export default function Hero({ onNavigate }: HeroProps) {
                                                                                 <div className={`flex justify-center gap-6 mt-8 transition-all duration-1000 delay-500 ${ctaVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                                                                                                     }`}>
                                                                                                     <a
-                                                                                                                        href="#"
+                                                                                                                        href="https://github.com/shashant654"
+                                                                                                                        target="_blank"
+                                                                                                                        rel="noopener noreferrer"
                                                                                                                         className="p-3 rounded-full bg-gray-200/80 dark:bg-slate-800/80 text-gray-700 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-400 hover:bg-gray-300 dark:hover:bg-slate-700 transition-all duration-300 hover:scale-110 hover:-translate-y-1 group"
                                                                                                     >
                                                                                                                         <Github className="h-6 w-6 group-hover:rotate-12 transition-transform" />
                                                                                                     </a>
                                                                                                     <a
-                                                                                                                        href="#"
+                                                                                                                        href="https://www.linkedin.com/in/shashant-shekhar-588a0b20b/"
+                                                                                                                        target="_blank"
+                                                                                                                        rel="noopener noreferrer"
                                                                                                                         className="p-3 rounded-full bg-gray-200/80 dark:bg-slate-800/80 text-gray-700 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-400 hover:bg-gray-300 dark:hover:bg-slate-700 transition-all duration-300 hover:scale-110 hover:-translate-y-1 group delay-100"
                                                                                                     >
                                                                                                                         <Linkedin className="h-6 w-6 group-hover:rotate-12 transition-transform" />
                                                                                                     </a>
                                                                                                     <a
-                                                                                                                        href="#"
+                                                                                                                        href="mailto:shashantshekhar10@gmail.com"
                                                                                                                         className="p-3 rounded-full bg-gray-200/80 dark:bg-slate-800/80 text-gray-700 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-400 hover:bg-gray-300 dark:hover:bg-slate-700 transition-all duration-300 hover:scale-110 hover:-translate-y-1 group delay-200"
                                                                                                     >
                                                                                                                         <Mail className="h-6 w-6 group-hover:rotate-12 transition-transform" />
